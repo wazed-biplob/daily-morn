@@ -12,7 +12,7 @@ import Link from "next/link";
 import { NavItems } from "./Navbar";
 const Footer = () => {
   return (
-    <Box>
+    <Box className="mt-4">
       <Container className="bg-black max-w-full px-2 py-4 m-0 mx-auto">
         <Box
           className="text-center"
@@ -42,6 +42,7 @@ const Footer = () => {
               </Button>
             </Link>
           ))}
+          logo
         </Box>
         <Typography variant="body2" className="text-gray-400 text-center">
           @2024 The Daily Morn- All rights reserved
