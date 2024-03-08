@@ -11,7 +11,7 @@ import { IconButton, Stack } from "@mui/material";
 // icons
 import FacebookIcon from "@mui/icons-material/Facebook";
 import Link from "next/link";
-const NavItems = [
+export const NavItems = [
   { route: "home", pathName: "/" },
   { route: "pages", pathName: "/pages" },
   { route: "category", pathName: "/category" },
@@ -22,8 +22,11 @@ const NavItems = [
 
 const NavBar = () => {
   return (
-    <AppBar position="static" style={{ backgroundColor: "black" }}>
-      <h1 className="bg-slate-500 text-red-600">Hello</h1>
+    <AppBar
+      className="mt-4"
+      position="static"
+      style={{ backgroundColor: "black" }}
+    >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Image src={Logo} width={100} height={100} alt="logo" />
